@@ -76,7 +76,7 @@ CREATE TABLE `miembro`
 	`sexo` VARCHAR(10),
 	`direccion` VARCHAR(255)  NOT NULL,
 	`entrecalles` VARCHAR(255),
-	`colonia` VARCHAR(255), 
+	`colonia` VARCHAR(255),
 	`cp` VARCHAR(5),
 	`ciudad` VARCHAR(255)  NOT NULL,
 	`telcasa` VARCHAR(10),
