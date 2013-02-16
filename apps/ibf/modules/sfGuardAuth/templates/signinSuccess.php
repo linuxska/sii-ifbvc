@@ -1,7 +1,7 @@
 <?php use_stylesheet('sfGuardPlugin/signin.css')?>
 
 <div id="text">
-    <h2>Bienvenido Sistema Integral de Informacion de la Iglesia Bautista Fundamental de Celaya</h2>
+    <h2>Bienvenido Sistema Integral de Informacion de la Iglesia Fundamenral Biblica Victoria en Cristo</h2>
     <dl>
         <dt>Inicie sesión</dt>
         <dd>Ingrese al sistema proporcionando sus datos de acceso en el formulario
@@ -14,7 +14,7 @@
         <p>Diaconos y asistentes del pastor, si no recuerdan sus datos de acceso usen el enlace <em>¿Olvidaste tu contraseña?</em></p>
         <p>Pastor y personal administrativo, si no recuerdan sus datos de acceso, por favor póngase en contacto con
         el administrador en la siguiente dirección de correo electrónico
-        <strong><a href="mailto:admin@ibfcelaya.org.mx">admin@ibfcelaya.org.mx</a></strong>.</p>
+        <strong><a href="mailto:contacto@abricolabs.net">contacto@abricolabs.net</a></strong>.</p>
         </dd>
     </dl>
 </div>

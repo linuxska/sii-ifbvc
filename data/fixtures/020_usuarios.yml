@@ -2,6 +2,9 @@ sfGuardUser:
   admin:
     username:       abraham
     password:       310389rima
+  admin:
+    username:       ruth
+    password:       ruth
   pastor_user:
     username:       alejandro
     password:       alejandro
@@ -11,27 +14,9 @@ sfGuardUser:
   secretaria_user1:
     username:       laura
     password:       laura
-  secretaria_user2:
-    username:       cintia
-    password:       cintia
   hospedaje_user1:
     username:       ruth
     password:       aguilar
-  hospedaje_user2:
-    username:       joel
-    password:       fraire
-  hospedaje_user3:
-    username:       karen
-    password:       pacheco
-  hospedaje_user4:
-    username:       lupita
-    password:       buenavista
-  hospedaje_user5:
-    username:       blanqui
-    password:       rivera
-  hospedaje_user6:
-    username:       isma
-    password:       jiks
 
 sfGuardPermission:
   admin_permiso:
@@ -97,24 +82,6 @@ sfGuardUserGroup:
   ug4:
     group_id:       secretaria_grupo
     user_id:        secretaria_user1
-  ug5:
-    group_id:       secretaria_grupo
-    user_id:        secretaria_user2
   ug6:
     group_id:       hospedaje_grupo
     user_id:        hospedaje_user1
-  ug7:
-    group_id:       hospedaje_grupo
-    user_id:        hospedaje_user2
-  ug8:
-    group_id:       hospedaje_grupo
-    user_id:        hospedaje_user3 
-  ug9:
-    group_id:       hospedaje_grupo
-    user_id:        hospedaje_user4
-  ug10:
-    group_id:       hospedaje_grupo
-    user_id:        hospedaje_user5
-  ug11:
-    group_id:       hospedaje_grupo
-    user_id:        hospedaje_user6

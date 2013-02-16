@@ -7,15 +7,7 @@
         <p>Hermano(a):</p>
         <p>Bienvenido</p>
         <ol>
-            <li>Recordar:  8 Usuarios de la Base de datos:
-                |may|abraham|blanquita|karen|joellupita|elsy|neftali|misael|
-                Password:    hospedajeibf
-                Registro de Hospedaje    
-                Joel Grps Grandres
-                Lupita familias de 2-3.
-                Misael familias de 4-6.
-                Karen  familias de 6++.
-                Mis responsabilidades ver por Jovenes/Hombres solos, Señoritas/Mujeres solas.
+            <li>Recordar:  
             </li>
         </ol>
         <p style="text-align:right"><em>- Staff</em></p>
@@ -29,9 +21,9 @@
         <dt>Ayuda</dt>
         <dd>Si tiene dudas y el manual de usuario (Pendiente) no se las resuelve por favor póngase en contacto con
         el administrador en la siguiente dirección de correo electrónico
-        <strong><a href="mailto:admin@ibfcelaya.org.mx">admin@ibfcelaya.org.mx</a></strong>.</dd>
+        <strong><a href="mailto:contacto@abricolabs.net">contacto@abricolabs.net</a></strong>.</dd>
         <dd>Si cree que ha encontrado un error en el sistema por favor póngase en contacto con
         el administrador en la siguiente dirección de correo electrónico
-        <strong><a href="mailto:admin@ibfcelaya.org.mx">admin@ibfcelaya.org.mx</a></strong>.</dd>
+        <strong><a href="mailto:contacto@abricolabs.net">contacto@abricolabs.net</a></strong>.</dd>
     </dl>
 </div>
