@@ -28,7 +28,6 @@ abstract class BaseMiembroForm extends BaseFormPropel
       'telcasa'       => new sfWidgetFormInputText(),
       'telmovil'      => new sfWidgetFormInputText(),
       'cumpleanios'   => new sfWidgetFormDate(),
-      'fechabautismo' => new sfWidgetFormDate(),
       'correo'        => new sfWidgetFormInputText(),
       'observaciones' => new sfWidgetFormInputText(),
     ));
@@ -48,7 +47,6 @@ abstract class BaseMiembroForm extends BaseFormPropel
       'telcasa'       => new sfValidatorString(array('max_length' => 10, 'required' => false)),
       'telmovil'      => new sfValidatorString(array('max_length' => 10, 'required' => false)),
       'cumpleanios'   => new sfValidatorDate(array('required' => false)),
-      'fechabautismo' => new sfValidatorDate(array('required' => false)),
       'correo'        => new sfValidatorString(array('max_length' => 255, 'required' => false)),
       'observaciones' => new sfValidatorString(array('max_length' => 255, 'required' => false)),
     ));

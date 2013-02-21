@@ -48,6 +48,8 @@ generator:
             label: Nuevo Miembro
           cumple:
             label: Cumpleaños del Mes
+          Lista:
+            label: Imprimir lista
       filter:  
         display: [ ministerio,nombre,apaterno, amaterno,direccion, colonia ]
         fields: 

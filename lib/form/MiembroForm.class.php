@@ -40,20 +40,6 @@ class MiembroForm extends BaseMiembroForm
         $this->setDefault('ciudad', 'Celaya');
 	    $this->setDefault('ministerio','21');
 		
-	   
-		
-		
-		$this->widgetSchema['fechabautismo'] = new  sfWidgetFormJQueryDate(array(
-		 'culture' => 'es',
-		 'config' => "
-		  {firstDay: 1,
-		   dayNamesMin: ['Do', 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sa'], 
-           monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
-      	  }",
-      	  'date_widget' => new sfWidgetFormDate(array(
-                    'format' => '%day%/%month%/%year%',
-                    'years' => array_combine(range(date('Y', time()) - 50, date('Y', time())), range(date('Y', time()) - 50, date('Y', time())))
-                ))));
 		$this->widgetSchema['cumpleanios'] = new  sfWidgetFormJQueryDate(array(
 		 'culture' => 'es',
 		 'config' => "
@@ -63,6 +49,7 @@ class MiembroForm extends BaseMiembroForm
       	  }",
       	  'date_widget' => new sfWidgetFormDate(array(
                     'format' => '%day%/%month%/%year%',
+                    'can_be_empty' => array('day' => 'day', 'month' => 'month', 'year' => 'year'),
                     'years' => array_combine(range(date('Y', time()) - 100, date('Y', time())), range(date('Y', time()) - 100, date('Y', time())))
                 ))));
 

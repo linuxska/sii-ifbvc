@@ -15,7 +15,7 @@ sfGuardUser:
     username:       laura
     password:       laura
   hospedaje_user1:
-    username:       ruth
+    username:       rut
     password:       aguilar
 
 sfGuardPermission:

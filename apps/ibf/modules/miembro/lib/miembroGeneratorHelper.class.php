@@ -13,4 +13,7 @@ class miembroGeneratorHelper extends BaseMiembroGeneratorHelper
 	public function linkToCumple() {
         return sprintf('<a href="%s">Cumpleaños del mes</a>', url_for('@miembro_cumple'));
     }
+    public function linkToLista() {
+        return sprintf('<a href="%s">Lista de Miembros</a>', url_for('@miembro_lista'));
+    }
 }

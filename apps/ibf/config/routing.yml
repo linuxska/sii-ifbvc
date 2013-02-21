@@ -55,6 +55,11 @@ miembro_cumple:
     sf_method:      [get]
   param:            { module: miembro, action: Cumple }
 
+miembro_lista:
+  url:              /miembro/lista/
+  requirements:
+    sf_method:      [get]
+  param:            { module: miembro, action: Lista }
 
 homepage:
   url:   /

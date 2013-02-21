@@ -2,3 +2,6 @@
 <li class="sf_admin_action_cumple">
   <?php echo $helper->linkToCumple() ?>
 </li>
+<li class="sf_admin_action_cumple">
+  <?php echo $helper->linkToLista() ?>
+</li>

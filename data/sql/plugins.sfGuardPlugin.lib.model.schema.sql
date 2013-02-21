@@ -72,7 +72,6 @@ CREATE TABLE `sf_guard_user`
 	`algorithm` VARCHAR(128) default 'sha1' NOT NULL,
 	`salt` VARCHAR(128)  NOT NULL,
 	`password` VARCHAR(128)  NOT NULL,
-	`email` VARCHAR(255)  NOT NULL,
 	`created_at` DATETIME,
 	`last_login` DATETIME,
 	`is_active` TINYINT default 1 NOT NULL,

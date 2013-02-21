@@ -19,15 +19,15 @@ default:
   # page format
   PDF_PAGE_FORMAT: "A5"
   # page orientation (P=portrait, L=landscape)
-  PDF_PAGE_ORIENTATION: "L"
+  PDF_PAGE_ORIENTATION: "P"
   # document creator
-  PDF_CREATOR: "Iglesia Bautista Fundamental de Celaya"
+  PDF_CREATOR: "iglesia bautista victoria en Cristo"
   # document author
   PDF_AUTHOR: "Abraham Rafael Rico Moreno"
   # header title
-  PDF_HEADER_TITLE: "Iglesia Bautista Fundamental de Celaya"
+  PDF_HEADER_TITLE: "Iglesia Bautista Victoria en Cristo"
   # header description string
-  PDF_HEADER_STRING: "Pastor Alejandro Córdova Karán - contacto@ibfcelaya.org.mx\nwww.ibfcelaya.org.mx"
+  PDF_HEADER_STRING: "Douglas Steven Miller - millers2mexico@juno.com"
   # image logo
   PDF_HEADER_LOGO: "Logo.png"
   # header logo image width [mm]
@@ -49,7 +49,7 @@ default:
   # default main font name
   PDF_FONT_NAME_MAIN: "helvetica"
   # default main font size
-  PDF_FONT_SIZE_MAIN: "11"
+  PDF_FONT_SIZE_MAIN: "9"
   # default data font name
   PDF_FONT_NAME_DATA: "helvetica"
   # default data font size

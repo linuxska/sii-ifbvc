@@ -25,7 +25,6 @@ abstract class BaseMiembroFormFilter extends BaseFormFilterPropel
       'telcasa'       => new sfWidgetFormFilterInput(),
       'telmovil'      => new sfWidgetFormFilterInput(),
       'cumpleanios'   => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate())),
-      'fechabautismo' => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate())),
       'correo'        => new sfWidgetFormFilterInput(),
       'observaciones' => new sfWidgetFormFilterInput(),
     ));
@@ -44,7 +43,6 @@ abstract class BaseMiembroFormFilter extends BaseFormFilterPropel
       'telcasa'       => new sfValidatorPass(array('required' => false)),
       'telmovil'      => new sfValidatorPass(array('required' => false)),
       'cumpleanios'   => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDate(array('required' => false)), 'to_date' => new sfValidatorDate(array('required' => false)))),
-      'fechabautismo' => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDate(array('required' => false)), 'to_date' => new sfValidatorDate(array('required' => false)))),
       'correo'        => new sfValidatorPass(array('required' => false)),
       'observaciones' => new sfValidatorPass(array('required' => false)),
     ));
@@ -78,7 +76,6 @@ abstract class BaseMiembroFormFilter extends BaseFormFilterPropel
       'telcasa'       => 'Text',
       'telmovil'      => 'Text',
       'cumpleanios'   => 'Date',
-      'fechabautismo' => 'Date',
       'correo'        => 'Text',
       'observaciones' => 'Text',
     );

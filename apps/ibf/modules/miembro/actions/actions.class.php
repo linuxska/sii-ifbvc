@@ -114,6 +114,91 @@ public function executeCumple() {
   throw new sfStopException();
   }
 
+public function executeLista() {
+  $config = sfTCPDFPluginConfigHandler::loadConfig();
+ 
+
+  
+  
+  $c = new Criteria();
+  $c->addAscendingOrderByColumn(MiembroPeer::NOMBRE);
+
+  //$c->add(MiembroPeer::CUMPLEANIOS, 'MONTH('.MiembroPeer::CUMPLEANIOS.')='. $mes_num, Criteria::CUSTOM);
+  $shows = MiembroPeer::doSelect($c);
+  
+  $i=0;
+  $nombres='<br/>';
+  
+  //var_dump($shows); die();
+  foreach ($shows as $a ) {
+    //var_dump($shows[$i]->getDireccion()); die();
+        $nombres=$nombres.$shows[$i]->get_Nombre()."  ".$shows[$i]->getDireccion()."  ".$shows[$i]->getColonia()."  ".$shows[$i]->getCiudad()."  ".$shows[$i]->getTelcasa()."  ".$shows[$i]->getTelmovil().'<br/>';
+
+    $i++;
+  }
+
+  //.""."<br/>"."Dios les bendiga!"
+  //var_dump($nombres);
+  //die();
+  $pdf = new TCPDF();
+   
+  // set document information
+  $pdf->SetCreator(PDF_CREATOR);
+  $pdf->SetAuthor('Abraham Rafael Rico Moreno');
+  $pdf->SetTitle('Iglesia Bautista Victoria en Cristo');
+  $pdf->SetSubject('Bienvenidos');
+  $pdf->SetKeywords('IBF, ibfqro, hospedaje, casa, ab');
+ 
+  // set default header data
+  $pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, PDF_HEADER_TITLE, PDF_HEADER_STRING);
+ 
+  // set header and footer fonts
+  $pdf->setHeaderFont(Array(PDF_FONT_NAME_MAIN, '', PDF_FONT_SIZE_MAIN));
+  $pdf->setFooterFont(Array(PDF_FONT_NAME_DATA, '', PDF_FONT_SIZE_DATA));
+ 
+  // set default monospaced font
+  $pdf->SetDefaultMonospacedFont(PDF_FONT_MONOSPACED);
+ 
+  //set margins
+  $pdf->SetMargins(PDF_MARGIN_LEFT, PDF_MARGIN_TOP, PDF_MARGIN_RIGHT);
+  $pdf->SetHeaderMargin(PDF_MARGIN_HEADER);
+  $pdf->SetFooterMargin(PDF_MARGIN_FOOTER);
+ 
+  //set auto page breaks
+  $pdf->SetAutoPageBreak(TRUE, PDF_MARGIN_BOTTOM);
+ 
+  //set image scale factor
+  $pdf->setImageScale(PDF_IMAGE_SCALE_RATIO);
+ 
+  // ---------------------------------------------------------
+ 
+  // set default font subsetting mode
+  $pdf->setFontSubsetting(true);
+ 
+  // Set font
+  // dejavusans is a UTF-8 Unicode font, if you only need to
+  // print standard ASCII chars, you can use core fonts like
+  // helvetica or times to reduce file size.
+  $pdf->SetFont('dejavusans', '', 11, '', true);
+ 
+  // Add a page
+  // This method has several options, check the source code documentation for more information.
+  $pdf->AddPage();
+
+  // Set some content to print
+  $html = 'Lista de miembros de la Iglesia'.'<br/>'.$nombres.'<br/>';
+  // Print text using writeHTMLCell()
+  $pdf->writeHTMLCell($w=0, $h=0, $x='', $y='', $html, $border=0, $ln=1, $fill=0, $reseth=true, $align='', $autopadding=true);
+ 
+  // ---------------------------------------------------------
+ 
+  // Close and output PDF document
+  // This method has several options, check the source code documentation for more information.
+  $pdf->Output('Lita_miembros.pdf', 'I');
+ 
+  // Stop symfony process
+  throw new sfStopException();
+  }
   public function preExecute()
   {
     $this->configuration = new miembroGeneratorConfiguration();
